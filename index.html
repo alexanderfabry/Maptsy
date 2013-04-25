@@ -12,12 +12,12 @@ path {
 <script src="http://d3js.org/topojson.v0.min.js"></script>
 <script>
 var width = 960,
-    height = 500;
+    height = 600;
 
 var projection = d3.geo.mercator()
-    .center([0, 5 ])
-    .scale(900)
-    .rotate([-180,0]);
+    .center([0,60])
+    .scale(300)
+    .rotate([0,0]);
 
 var svg = d3.select("body").append("svg")
     .attr("width", width)
