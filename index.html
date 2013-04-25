@@ -4,7 +4,7 @@
 path {
   stroke: white;
   stroke-width: 0.25px;
-  fill: grey;
+  fill: #111;
 }
 </style>
 <body>
@@ -44,7 +44,7 @@ d3.csv("cities.csv", function(error, data) {
                return projection([d.lon, d.lat])[1];
        })
        .attr("r", 5)
-       .style("fill", "red");
+       .style("fill", "white");
 });
 
 
